@@ -12,22 +12,22 @@ describe("Calculator", () => {
         expect(result).toBe(5);
     });
 
-    test('should subtract two numbers correctly', () => {
+    test('Soustrait deux nombres', () => {
         const result = calculator.subtract(5, 3);
         expect(result).toBe(2);
     });
 
-    test('should handle negative results', () => {
+    test('Gère les résultats négatifs', () => {
         const result = calculator.subtract(3, 5);
         expect(result).toBe(-2);
     });
 
-    test('should multiply two numbers correctly', () => {
+    test('Multiplie deux nombres correctement', () => {
         const result = calculator.multiply(4, 5);
         expect(result).toBe(20);
     });
 
-    test('should throw error when dividing by zero', () => {
+    test('Lance une erreur lors d’une division par zéro', () => {
         expect(() => calculator.divide(5, 0)).toThrow('Division by zero is not allowed');
     });
 
