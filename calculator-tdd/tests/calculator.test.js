@@ -22,8 +22,18 @@ describe("Calculator", () => {
         expect(result).toBe(-2);
     });
 
+    test('should multiply two numbers correctly', () => {
+        const result = calculator.multiply(4, 5);
+        expect(result).toBe(20);
+    });
+
     test('should throw error when dividing by zero', () => {
         expect(() => calculator.divide(5, 0)).toThrow('Division by zero is not allowed');
+    });
+
+    test("Division par 2", () => {
+        const result = calculator.divide(10, 2);
+        expect(result).toBe(5);
     });
 
 });
