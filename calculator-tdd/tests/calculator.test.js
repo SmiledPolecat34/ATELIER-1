@@ -22,4 +22,8 @@ describe("Calculator", () => {
         expect(result).toBe(-2);
     });
 
+    test('should throw error when dividing by zero', () => {
+        expect(() => calculator.divide(5, 0)).toThrow('Division by zero is not allowed');
+    });
+
 });
