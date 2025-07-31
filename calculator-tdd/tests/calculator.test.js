@@ -11,4 +11,15 @@ describe("Calculator", () => {
         const result = calculator.add(2, 3);
         expect(result).toBe(5);
     });
+
+    test('should subtract two numbers correctly', () => {
+        const result = calculator.subtract(5, 3);
+        expect(result).toBe(2);
+    });
+
+    test('should handle negative results', () => {
+        const result = calculator.subtract(3, 5);
+        expect(result).toBe(-2);
+    });
+
 });
